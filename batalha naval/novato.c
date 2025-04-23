@@ -55,7 +55,14 @@ int main() {
     }
 
     printf("Tabuleiro:\n");
+
+    for (int coluna = 0 ; coluna < tamtabuleiro; coluna++) {
+        printf("%d ", coluna);
+    }
+    printf("\n");
+
     for (int linha = 0; linha < tamtabuleiro; linha++) {
+        printf("%c  ", 'A' + linha);
         for (int coluna = 0; coluna < tamtabuleiro; coluna++) {
             printf("%d ", tabuleiro[linha][coluna]);
         }
